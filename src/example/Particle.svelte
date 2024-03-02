@@ -9,8 +9,8 @@
 </script>
 
 <script lang="ts">
-  import { T, forwardEventHandlers, useFrame } from '@threlte/core'
-  import { PositionalAudio, useGltf } from '@threlte/extras'
+  import { T, forwardEventHandlers } from '@threlte/core'
+  import { PositionalAudio } from '@threlte/extras'
   import { Collider, RigidBody, type ContactEvent } from '@threlte/rapier'
   import { writable } from 'svelte/store'
   import type { Euler, Vector3 } from 'three'
@@ -36,7 +36,7 @@
       play: undefined,
       stop: undefined,
       volume: (i + 2) / 10,
-      source: `/audio/ball_bounce_${i + 1}.mp3`
+      source: `../static/assets/ping.mp3`
     }
   })
 

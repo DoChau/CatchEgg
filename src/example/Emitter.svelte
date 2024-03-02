@@ -2,7 +2,6 @@
   import { useTask } from '@threlte/core'
   import { Euler, Vector3 } from 'three'
   import Particle from './Particle.svelte'
-  
 
   const getId = () => {
     return Math.random().toString(16).slice(2)

@@ -8,6 +8,7 @@
   import Particle from './Particle.svelte'
   import Emitter from './Emitter.svelte'
   import Ground from './Ground.svelte'
+  import Bg from '$lib/randomness.svelte'
 
   let dispatch = createEventDispatcher()
   const catched = () => {
@@ -56,20 +57,25 @@
 	}
 </script>
 
+
 <T.PerspectiveCamera
   makeDefault
   position={[10, 10, 10]}
 >
-  <OrbitControls enableZoom={false} />
-  <AudioListener />
+  <OrbitControls 
+    enableZoom={false}
+    enableRotate={false}
+  <AudioListener />>
 </T.PerspectiveCamera>
+
 
 <T.DirectionalLight
   castShadow
-  position={[8, 20, -3]}
+  position={[8, 10, -3]}
 />
 
 <T.GridHelper args={[10]} />
+
 
 <Ground />
 
