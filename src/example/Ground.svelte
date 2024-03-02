@@ -5,7 +5,7 @@
 
 </script>
 
-<T.Group position={[-3, -1, 0]}>
+<T.Group position={[0, -1, 0]}>
   <AutoColliders shape={'cuboid'}>
     <T.Mesh receiveShadow>
       <!----><T.BoxGeometry args={[10, -1, 10]} />
