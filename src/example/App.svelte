@@ -97,15 +97,14 @@
     <Canvas>
       <World>
 							
-				<!-- Equirectangular jpg envmap 
-				<Environment
-					path="./static/assets/"
-					files="bg.jpg"
-					isBackground={true}
-					groundProjection={{ radius: 200, height: 50, scale: { x: 100, y: 100, z: 100 } }}
-				/>
-				-->
-
+		<!-- Equirectangular jpg envmap -->
+		<Environment
+		path="./static/assets/"
+		files="bg.jpg"
+		isBackground={true}
+		groundProjection={{ radius: 200, height: 50, scale: { x: 100, y: 100, z: 100 } }}
+		/>		
+			
         <Scene on:won = {(e) => {gameWon()}} />
 
         <HTML

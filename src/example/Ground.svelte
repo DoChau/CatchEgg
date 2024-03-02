@@ -1,7 +1,7 @@
 <script lang="ts">
   import { T } from '@threlte/core'
   import { AutoColliders } from '@threlte/rapier'
-  import Picnic from '$lib/picnic.svelte'
+  import Picnic from '../lib/picnic.svelte'
 
 </script>
 

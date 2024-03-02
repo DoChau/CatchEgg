@@ -16,7 +16,7 @@
   import type { Euler, Vector3 } from 'three'
   import { BoxGeometry, MeshStandardMaterial } from 'three'
   import { clamp } from 'three/src/math/MathUtils'
-  import Egg from '$lib/egg.svelte'
+  import Egg from '../lib/egg.svelte'
   const dispatchingComponent = forwardEventHandlers()
 
   export let position: Vector3 | undefined = undefined

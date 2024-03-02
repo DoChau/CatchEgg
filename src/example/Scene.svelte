@@ -8,7 +8,7 @@
   import Particle from './Particle.svelte'
   import Emitter from './Emitter.svelte'
   import Ground from './Ground.svelte'
-  import Bg from '$lib/randomness.svelte'
+  import Bg from '../lib/randomness.svelte'
 
   let dispatch = createEventDispatcher()
   const catched = () => {
@@ -76,6 +76,7 @@
 
 <T.GridHelper args={[10]} />
 
+<Bg/>
 
 <Ground />
 
